@@ -1,78 +1,131 @@
-<! DOCTYPE html>
+<!--
+    Page created by:  Name: Kay Idung
+                      Git repo: kayidung
+                      Date: Grace period.
+ -->
+<!DOCTYPE html>
 <html>
-<head>
- <title>HTML form</title>
-</head>
-<body> 
- <h1>STUDENTS FORM</h1>
-<form>
- <label for="name"> Name</label>
- <input type="text" required name="name" placeholder="Kay">
+  <head>
+    <title>REGISTRATION | GREENVILE UNIVERSITY</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <!-- Link a CSS file. -->
+    <!-- <link rel="stylesheet" href="./assets/css/fontawesome/css/all.min.css" /> -->
+  </head>
+  <body>
+    <header>
+      <h1 class="title">GREENVILE UNIVERSITY, UYO</h1>
+      <hr />
+    </header>
+    <div class="container">
+      <section class="section__student__information">
+        <h5>
+          <i class="fas fa-user title__font-awesome"></i> STUDENTS INFORMATION
+        </h5>
+        <hr />
+      </section>
+      <section class="section__add__student">
+        <!-- Create a title. -->
+        <h5>
+          <i class="fas fa-user-plus title__font-awesome"></i> ADD STUDENTS
+        </h5>
+        <hr />
 
-<div>
- <label for="level"> Level</label>
-<select name="level">
-<option>100</option>
-<option>200</option>
-<option>300</option>
-<option>400</option>
-<option>500</option>
-</select>
-</div>
+        <!-- Create a form to add students. -->
+        <form>
+          <div class="form__field">
+            <label for="name">Name</label>
+            <input type="text" required name="name" placeholder="Kay" />
+          </div>
 
- <label for="email">Email</label>
- <input required type="email" id="email"name="email" Placeholder="kayidung@gmail.com">
-<br/>
- <label>Address</label>
- <input type="text" placeholder="Vision Road, Nwaniba">
+          <div class="form__field">
+            <label for="name">Date of Birth</label>
+            <input type="date" name="dob" />
+          </div>
 
-<div>
-<label for="about">Tell Me about yourself</label>
-<textarea name="about" style="height:400px"; width:400px;"></textarea>
-</div>
+          <div class="form__field">
+            <label for="level"> Level</label>
+            <select name="level">
+              <option>100</option>
+              <option>200</option>
+              <option>300</option>
+              <option>400</option>
+              <option>500</option>
+            </select>
+          </div>
 
-<div>
-<label for="fav_food">Favourite food</label>
-<input type="checkbox" name="fav_food[]">Otung
-<input type="checkbox" name="fav_food[]">Usung
-<input type="checkbox" name="fav_food[]">Ototo
-</div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input
+              required
+              type="email"
+              id="email"
+              name="email"
+              placeholder="kayidung@gmail.com"
+            />
+          </div>
 
-<div>
-<label for="fav_sport">Favourite Sport</label>
-<input type="radio" name="fav_sport">Football
-<input type="radio" name="fav_sport">Basketball
-<input type="radio" name="fav_sport">Sprint
-</div>
+          <div class="form__field">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="Vision Road, Nwaniba"
+            />
+          </div>
 
-<div>
-<label for="fav_color">Favourite color</label>
-<input type="color" name="fav_sport">pink
-<input type="color" name="fav_sport">Black
-<input type="color" name="fav_sport">green
-</div>
+          <div class="form__field">
+            <label for="about">Tell Me about yourself</label>
+            <textarea
+              name="about"
+              style="height: 400px; width: 400px;"
+            ></textarea>
+          </div>
 
-<div>
-<label for="search">Favourite Search</label>
-<input type="search" name="fav_sport">music
-<input type="search" name="fav_sport">nature
-<input type="search" name="fav_sport">people
-</div>
+          <div class="form__field">
+            <label for="fav_food">Favourite food</label>
+            <input type="checkbox" name="fav_food[]" />Otung
+            <input type="checkbox" name="fav_food[]" />Usung
+            <input type="checkbox" name="fav_food[]" />Ototo
+          </div>
 
+          <div class="form__field">
+            <label for="fav_sport">Favourite Sport</label>
+            <input type="radio" name="fav_sport" />Football
+            <input type="radio" name="fav_sport" />Basketball
+            <input type="radio" name="fav_sport" />Sprint
+          </div>
 
-<button type="submit">Sign up</button>
-<br/>
-<input type="submit" name="submit" value="submit">
-</form>
- 
+          <div class="form__field">
+            <label for="height">Height</label>
+            <input type="range" name="height" min="0" max="100" />
+          </div>
 
+          <div class="form__field">
+            <label for="fav_color">Favourite color</label>
+            <input type="color" name="fav_sport" />pink
+            <input type="color" name="fav_sport" />Black
+            <input type="color" name="fav_sport" />green
+          </div>
+
+          <div class="form__field">
+            <label for="search">Favourite Search</label>
+            <input type="search" name="fav_sport" />music
+            <input type="search" name="fav_sport" />nature
+            <input type="search" name="fav_sport" />people
+          </div>
+
+          <div class="form__wrapper__button">
+            <button type="submit">Sign up</button>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="./assets/css/fontawesome/js/all.min.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-

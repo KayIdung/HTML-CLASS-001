@@ -1,0 +1,44 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container section {
+  width: 50%;
+  flex-grow: 1;
+}
+
+.title {
+  text-align: center;
+  color: rgb(89, 161, 89);
+}
+
+form {
+  /* width: 50%; */
+  box-sizing: border-box;
+}
+
+form div {
+  margin: 15px 5px;
+}
+
+form div.form__field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form div.form__field input,
+form div.form__field select,
+form div.form__field textarea {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  outline: 0;
+  font-size: 1rem;
+}
